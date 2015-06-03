@@ -303,6 +303,31 @@ header p {
 		}
 		&:nth-child{}
 	}
+	.pre-events {
+		li {
+			&>a {
+				width: 15%;
+			}
+			.inner-block {
+				width: 85%;
+				padding: 0 0 0 1em;
+				
+				.event-summary {
+					dt, dd {
+					  display: inline;
+					  float: none;
+					  margin: 0;
+					}
+					dt::before {
+						content: ' | ';
+					}
+					dt:first-child::before {
+						content: '';
+					}
+				}
+			}
+		}
+	}
 }
 
 .host, .cooperation, .staff {
